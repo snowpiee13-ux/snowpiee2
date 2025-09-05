@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog - Khianix Barbershop</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #f1f1f1;
+    }
+
+    header {
+      background: #000;
+      padding: 20px 0;
+      border-bottom: 2px solid #e0b95c;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #e0b95c;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #e0b95c;
+    }
+
+    main {
+      flex: 1;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e0b95c;
+      margin-bottom: 30px;
+    }
+
+    .blog-intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .blog-intro img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #e0b95c;
+      margin-bottom: 15px;
+    }
+
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .post {
+      background: #1b1b1b;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+    }
+
+    .post h2 {
+      color: #e0b95c;
+      margin-bottom: 10px;
+    }
+
+    .post p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .post img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    
+    .newsletter {
+      background: #1b1b1b;
+      padding: 30px;
+      border-radius: 12px;
+      margin: 50px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    .newsletter h2 {
+      color: #e0b95c;
+      margin-bottom: 15px;
+    }
+
+    .newsletter input[type="email"] {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      width: 250px;
+      margin-right: 10px;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background: #e0b95c;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .newsletter button:hover {
+      background: #cfa648;
+    }
+
+  
+    .cta {
+      background: #000;
+      padding: 30px;
+      text-align: center;
+      border-radius: 12px;
+      border: 2px solid #e0b95c;
+      margin: 40px 0;
+    }
+
+    .cta h2 {
+      color: #e0b95c;
+      margin-bottom: 15px;
+    }
+
+    .cta a {
+      background: #e0b95c;
+      padding: 12px 25px;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      background: #cfa648;
+    }
+
+    footer {
+      background: #000;
+      color: #777;
+      text-align: center;
+      padding: 15px;
+      margin-top: auto;
+      border-top: 2px solid #e0b95c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">Khianix Barbershop</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html" class="active">Blog</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Khianix Barbershop Blog</h1>
+
+    <div class="blog-intro">
+      <img src="khian.jpg" alt="Khian Profile Picture" />
+      <p>Welcome to my blog! Here I share barber tips, grooming advice, style inspirations, and stories from the shop. Stay fresh, stay sharp!</p>
+    </div>
+
+    <div class="posts">
+      <div class="post">
+        <img src="back (1).jpg" alt="Fade Haircut">
+        <h2>Top 5 Fade Haircuts in 2025</h2>
+        <p>The fade is a timeless style. In this post, I break down the most popular fade variations, from low fades to skin fades, and how to pick the right one for your face shape.</p>
+      </div>
+
+      <div class="post">
+        <img src="back (5).jpg" alt="Beard Grooming">
+        <h2>Beard Grooming Tips</h2>
+        <p>A well-maintained beard can completely change your look. Learn the secrets to keeping your beard soft, shaped, and stylish with professional techniques.</p>
+      </div>
+
+      <div class="post">
+        <img src="back (7).jpg" alt="Barbershop Vibes">
+        <h2>Why Barbershops Are More Than Just Haircuts</h2>
+        <p>For many, the barbershop is more than grooming — it’s about community, conversations, and culture. Let’s talk about what makes a barbershop a special place.</p>
+      </div>
+
+      <div class="post">
+        <img src="back (10).jpg" alt="Haircare Products">
+        <h2>Best Haircare Products for Men</h2>
+        <p>Not all products are created equal. Here are my recommendations for pomades, clays, and gels to keep your style on point without damaging your hair.</p>
+      </div>
+
+      <div class="post">
+        <img src="back (3).jpg" alt="Trendy Hairstyles">
+        <h2>Hairstyle Trends of 2025</h2>
+        <p>This year is all about textured crops, modern mullets, and slick styles. Find out which trends are worth trying and how to pull them off confidently.</p>
+      </div>
+
+      <div class="post">
+        <img src="back (12).jpg" alt="Kids Haircuts">
+        <h2>Best Haircuts for Kids</h2>
+        <p>From classic crew cuts to stylish fades, kids deserve sharp looks too. Here’s how to choose the perfect style for your little one.</p>
+      </div>
+
+      <div class="post">
+        <img src="back (8).jpg" alt="Self-Care">
+        <h2>Barber’s Guide to Self-Care</h2>
+        <p>Looking sharp starts with taking care of yourself. Here are some grooming and wellness habits every man should build into his routine.</p>
+      </div>
+
+      <div class="post">
+        <img src="Scissors and clippers.jpg" alt="Scissors vs Clippers">
+        <h2>Scissors vs Clippers: What’s the Difference?</h2>
+        <p>Both tools are essential, but each serves a unique purpose. Learn when to use scissors, when to use clippers, and why a great barber uses both.</p>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get the latest grooming tips and style updates delivered straight to your inbox.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="cta">
+      <h2>Ready for a Fresh Cut?</h2>
+      <p>Book your next appointment at Khianix Barbershop today and keep your style sharp.</p>
+      <a href="booking.html">Book Now</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Khianix Barbershop. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

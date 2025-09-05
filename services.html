@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Khianix Barbershop</title>
+
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+    }
+
+    header {
+      background-color: #000;
+      padding: 15px 40px;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #e0b95c;
+    }
+    .nav-links a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #e0b95c;
+    }
+
+
+    .services {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .services h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #e0b95c;
+    }
+    .services .intro-text {
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #ccc;
+    }
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .service {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s, background 0.3s;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+      background: #222;
+    }
+    .service h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #e0b95c;
+    }
+    .service p {
+      font-size: 15px;
+      color: #ddd;
+    }
+
+
+    .cta {
+      text-align: center;
+      padding: 50px 20px;
+      background: #000;
+      margin-top: 60px;
+    }
+    .cta h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #e0b95c;
+    }
+    .cta p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 16px;
+      background: #e0b95c;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #d1a94a;
+    }
+
+ 
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">Khianix Barbershop</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+          <a href="blog.html">Blog</a>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="services">
+    <h1>Our Services</h1>
+    <p class="intro-text">At Khianix Barbershop, we deliver top-quality grooming tailored to your style. Check out our services below.</p>
+
+    <div class="service-list">
+      <div class="service">
+        <h2>Classic Haircut</h2>
+        <p>A timeless cut for a clean, sharp look — perfect for any occasion.</p>
+      </div>
+      <div class="service">
+        <h2>Fade & Taper</h2>
+        <p>Sharp fades and clean tapers that give you modern precision and edge.</p>
+      </div>
+      <div class="service">
+        <h2>Beard Trim & Styling</h2>
+        <p>Shape, trim, and style your beard with expert hands for a fresh finish.</p>
+      </div>
+      <div class="service">
+        <h2>Hot Towel Shave</h2>
+        <p>Relax with a luxury straight razor shave and hot towel treatment.</p>
+      </div>
+      <div class="service">
+        <h2>Hair Wash & Scalp Massage</h2>
+        <p>Refresh your look with a deep wash and relaxing scalp massage.</p>
+      </div>
+      <div class="service">
+        <h2>Kids & Teen Haircuts</h2>
+        <p>Fun, stylish cuts for younger clients — done with patience and care.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Book Your Appointment Today</h2>
+    <p>Walk-ins welcome, but booking ensures your spot!</p>
+    <a href="tel:09692039194" class="btn">📞 Call Now</a>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Khianix Barbershop. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
